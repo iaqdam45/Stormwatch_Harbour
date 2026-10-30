@@ -1,0 +1,28 @@
+Task 2 Results (seeds 11,12,13)
+
+Baseline policy:
+Seed 11: cargo=156, knockouts=16
+Seed 12: cargo=158, knockouts=8
+Seed 13: cargo=158, knockouts=8
+Average cargo: 157.3
+Average knockouts: 10.7
+
+Model-based policy:
+Seed 11: cargo=158, knockouts=0
+Seed 12: cargo=152, knockouts=0
+Seed 13: cargo=158, knockouts=0
+Average cargo: 156.0
+Average knockouts: 0.0
+
+Model-based performed better because it had zero storm knockouts while cargo was almost the same.
+
+Task 3 Results (model + LLM, same seeds)
+
+Seed 11: cargo=150, knockouts=0, invalid=7, fallback=7
+Seed 12: cargo=160, knockouts=0, invalid=6, fallback=6
+Seed 13: cargo=150, knockouts=0, invalid=2, fallback=2
+Average cargo: 153.3
+Average invalid: 5.0
+Average fallback: 5.0
+
+Model-based alone performed better on average cargo and had no invalid actions.
